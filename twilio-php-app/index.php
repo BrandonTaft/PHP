@@ -4,7 +4,22 @@ require_once "vendor/autoload.php";
 use Twilio\TwiML\VoiceResponse;
 
 $response = new VoiceResponse;
-$response->say("Hello World!");
+$response->say("Hello!");
 
 header("content-type: text/xml");
-echo $response;
+echo $response;?>
+
+
+<?php
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
+?>
+<h3>strpos() must have returned non-false</h3>
+<p>You are using Internet Explorer</p>
+<?php
+} else {
+?>
+<h3>strpos() must have returned false</h3>
+<p>You are not using Internet Explorer</p>
+<?php
+}
+?>
