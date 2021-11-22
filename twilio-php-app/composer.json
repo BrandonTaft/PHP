@@ -1,0 +1,12 @@
+{
+    "name": "brandontaft/twilio-php-app",
+    "require": {
+        "twilio/sdk": "^6.31"
+    },
+    "authors": [
+        {
+            "name": "Btaft6278",
+            "email": "btaft6278@gmail.com"
+        }
+    ]
+}
